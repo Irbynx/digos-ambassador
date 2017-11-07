@@ -61,5 +61,245 @@ namespace DIGOS.Ambassador.Database.UserInfo
 		/// Gets or sets the full description of the character.
 		/// </summary>
 		public string Description { get; set; }
+
+		/// <summary>
+		/// Gets or sets the skin color
+		/// </summary>
+		public string SkinColor { get; set; }
+
+		/// <summary>
+		/// Gets or sets the skin pattern type
+		/// </summary>
+		public string SkinPatternType { get; set; }
+
+		/// <summary>
+		/// Gets or sets the skin pattern color
+		/// </summary>
+		public string SkinPatternColor { get; set; }
+
+		/// <summary>
+		/// Gets or sets the fur color
+		/// </summary>
+		public string FurColor { get; set; }
+
+		/// <summary>
+		/// Gets or sets the fur pattern type
+		/// </summary>
+		public string FurPatternType { get; set; }
+
+		/// <summary>
+		/// Gets or sets the fur pattern color
+		/// </summary>
+		public string FurPatternColor { get; set; }
+
+		/// <summary>
+		/// Gets or sets the scales color
+		/// </summary>
+		public string ScalesColor { get; set; }
+
+		/// <summary>
+		/// Gets or sets the scales pattern type
+		/// </summary>
+		public string ScalesPatternType { get; set; }
+
+		/// <summary>
+		/// Gets or sets the scales pattern color
+		/// </summary>
+		public string ScalesPatternColor { get; set; }
+
+		/// <summary>
+		/// Gets or sets the hair color
+		/// </summary>
+		public string HairColor { get; set; }
+
+		/// <summary>
+		/// Gets or sets the hair pattern type
+		/// </summary>
+		public string HairPatternType { get; set; }
+
+		/// <summary>
+		/// Gets or sets the hair pattern color
+		/// </summary>
+		public string HairPatternColor { get; set; }
+
+		/// <summary>
+		/// Gets or sets the hair style
+		/// </summary>
+		public string HairStyle { get; set; }
+
+		/// <summary>
+		/// Gets or sets the hair length
+		/// </summary>
+		public int HairLength { get; set; }
+
+		/// <summary>
+		/// Gets or sets the eye color
+		/// </summary>
+		public string EyeColor { get; set; }
+
+		/// <summary>
+		/// Gets or sets the head TF species
+		/// </summary>
+		public string HeadTF { get; set; }
+
+		/// <summary>
+		/// Gets or sets the body TF species
+		/// </summary>
+		public string BodyTF { get; set; }
+
+		/// <summary>
+		/// Gets or sets the tail TF species
+		/// </summary>
+		public string TailTF { get; set; }
+
+		/// <summary>
+		/// Gets or sets the arm TF species
+		/// </summary>
+		public string ArmsTF { get; set; }
+
+		/// <summary>
+		/// Gets or sets the legs TF species
+		/// </summary>
+		public string LegsTF { get; set; }
+
+		/// <summary>
+		/// Gets or sets the height
+		/// </summary>
+		public int Height { get; set; }
+
+		/// <summary>
+		/// Gets or sets the weight
+		/// </summary>
+		public int Weight { get; set; }
+
+		/// <summary>
+		/// Gets or sets the masculinity
+		/// </summary>
+		public int Masculinity { get; set; }
+
+		/// <summary>
+		/// Gets or sets the muscule
+		/// </summary>
+		public int Muscle { get; set; }
+
+		/// <summary>
+		/// Gets or sets the skin color (default)
+		/// </summary>
+		public string SkinColorDefault { get; set; }
+
+		/// <summary>
+		/// Gets or sets the skin pattern type (default)
+		/// </summary>
+		public string SkinPatternTypeDefault { get; set; }
+
+		/// <summary>
+		/// Gets or sets the skin pattern color (default)
+		/// </summary>
+		public string SkinPatternColorDefault { get; set; }
+
+		/// <summary>
+		/// Gets or sets the fur color (default)
+		/// </summary>
+		public string FurColorDefault { get; set; }
+
+		/// <summary>
+		/// Gets or sets the fur pattern type (default)
+		/// </summary>
+		public string FurPatternTypeDefault { get; set; }
+
+		/// <summary>
+		/// Gets or sets the fur pattern color (default)
+		/// </summary>
+		public string FurPatternColorDefault { get; set; }
+
+		/// <summary>
+		/// Gets or sets the scales color (default)
+		/// </summary>
+		public string ScalesColorDefault { get; set; }
+
+		/// <summary>
+		/// Gets or sets the scales pattern type (default)
+		/// </summary>
+		public string ScalesPatternTypeDefault { get; set; }
+
+		/// <summary>
+		/// Gets or sets the scales pattern color (default)
+		/// </summary>
+		public string ScalesPatternColorDefault { get; set; }
+
+		/// <summary>
+		/// Gets or sets the hair color (default)
+		/// </summary>
+		public string HairColorDefault { get; set; }
+
+		/// <summary>
+		/// Gets or sets the hair pattern type (default)
+		/// </summary>
+		public string HairPatternTypeDefault { get; set; }
+
+		/// <summary>
+		/// Gets or sets the hair pattern color (default)
+		/// </summary>
+		public string HairPatternColorDefault { get; set; }
+
+		/// <summary>
+		/// Gets or sets the hair style (default)
+		/// </summary>
+		public string HairStyleDefault { get; set; }
+
+		/// <summary>
+		/// Gets or sets the hair length (default)
+		/// </summary>
+		public int HairLengthDefault { get; set; }
+
+		/// <summary>
+		/// Gets or sets the eye color (default)
+		/// </summary>
+		public string EyeColorDefault { get; set; }
+
+		/// <summary>
+		/// Gets or sets the head TF species (default)
+		/// </summary>
+		public string HeadTFDefault { get; set; }
+
+		/// <summary>
+		/// Gets or sets the body TF species (default)
+		/// </summary>
+		public string BodyTFDefault { get; set; }
+
+		/// <summary>
+		/// Gets or sets the tail TF species (default)
+		/// </summary>
+		public string TailTFDefault { get; set; }
+
+		/// <summary>
+		/// Gets or sets the arm TF species (default)
+		/// </summary>
+		public string ArmsTFDefault { get; set; }
+
+		/// <summary>
+		/// Gets or sets the legs TF species (default)
+		/// </summary>
+		public string LegsTFDefault { get; set; }
+
+		/// <summary>
+		/// Gets or sets the height (default)
+		/// </summary>
+		public int HeightDefault { get; set; }
+
+		/// <summary>
+		/// Gets or sets the weight (default)
+		/// </summary>
+		public int WeightDefault { get; set; }
+
+		/// <summary>
+		/// Gets or sets the masculinity (default)
+		/// </summary>
+		public int MasculinityDefault { get; set; }
+
+		/// <summary>
+		/// Gets or sets the muscule (default)
+		/// </summary>
+		public int MuscleDefault { get; set; }
 	}
 }
