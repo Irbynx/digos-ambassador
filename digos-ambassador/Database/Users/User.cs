@@ -23,6 +23,7 @@
 using System.Collections.Generic;
 using DIGOS.Ambassador.Database.Characters;
 using DIGOS.Ambassador.Database.Interfaces;
+using DIGOS.Ambassador.Database.TCG;
 using JetBrains.Annotations;
 
 namespace DIGOS.Ambassador.Database.Users
@@ -70,5 +71,15 @@ namespace DIGOS.Ambassador.Database.Users
         /// Gets or sets the kinks or fetishes of a user, as well as their preferences for each.
         /// </summary>
         public List<UserKink> Kinks { get; set; }
+
+        /// <summary>
+        /// Gets or sets the currently ongoing match the user takes part in
+        /// </summary>
+        public TCGMatch CurrentMatch { get; set; }
+
+        /// <summary>
+        /// Gets or sets the decks that this player owns
+        /// </summary>
+        public List<TCGDeck> Decks { get; set; }
     }
 }

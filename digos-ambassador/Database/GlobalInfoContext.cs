@@ -39,6 +39,7 @@ using DIGOS.Ambassador.Services;
 
 using Discord;
 using Discord.Commands;
+using DIGOS.Ambassador.Database.TCG;
 using JetBrains.Annotations;
 using Microsoft.EntityFrameworkCore;
 using Image = DIGOS.Ambassador.Database.Data.Image;
@@ -216,6 +217,17 @@ namespace DIGOS.Ambassador.Database
         }
 
         /// <summary>
+        /// Gets or sets the table where TCG match instances are stored
+        /// </summary>
+        public DbSet<TCGMatch> TCGMatches
+        {
+            get;
+
+            [UsedImplicitly]
+            set;
+        }
+
+        /// <summary>
         /// Initializes a new instance of the <see cref="GlobalInfoContext"/> class.
         /// </summary>
         /// <param name="options">The context options.</param>
@@ -384,6 +396,7 @@ namespace DIGOS.Ambassador.Database
 
             await this.Users.AddAsync(newUser);
 
+                .OrderBy(u => u.ID)
             await SaveChangesAsync();
 
             return await GetUser(discordUser);

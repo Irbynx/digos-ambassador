@@ -47,7 +47,7 @@ using Discord;
 using Discord.Commands;
 using Discord.Net;
 using Discord.WebSocket;
-
+using DIGOS.Ambassador.Services.TCG;
 using Humanizer;
 using JetBrains.Annotations;
 using log4net;
@@ -107,6 +107,8 @@ namespace DIGOS.Ambassador
 
         private readonly ServerService Servers;
 
+        private readonly TCGService TCG;
+
         // ReSharper restore PrivateFieldCanBeConvertedToLocalVariable
 
         /// <summary>
@@ -148,6 +150,8 @@ namespace DIGOS.Ambassador
             this.Help = new HelpService(this.Feedback);
 
             this.Servers = new ServerService();
+            
+            this.TCG = new TCGService();
 
             this.Services = new ServiceCollection()
                 .AddSingleton(this.Client)
@@ -166,6 +170,7 @@ namespace DIGOS.Ambassador
                 .AddSingleton(this.Privacy)
                 .AddSingleton(this.Help)
                 .AddSingleton(this.Servers)
+                .AddSingleton(this.TCG)
                 .AddDbContextPool<GlobalInfoContext>(builder => GlobalInfoContext.ConfigureOptions(builder))
                 .BuildServiceProvider();
 
